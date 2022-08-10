@@ -8,7 +8,7 @@ const CURRENCY_USD = {
   label: "$",
 };
 
-const DELAY_TIME = 5;
+const DELAY_TIME = 60;
 
 // *
 const URL_LIST_FOR_CRYPTO_INFO = {
