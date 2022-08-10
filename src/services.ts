@@ -89,7 +89,10 @@ const usePersistScore = (userId: string, callbackFn?: () => void) =>
     (data: any) =>
       axiosConfig.post(
         `${URL_LIST_FOR_PERSIST.baseUrl}${URL_LIST_FOR_PERSIST.saveScore}`,
-        data
+        {
+          username: userId,
+          ...data,
+        }
       ),
     {
       onSuccess: async (_) => {
